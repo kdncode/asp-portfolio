@@ -1,0 +1,58 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Khoa Nguyen's Website</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=8" />
+     <link href="http://netdna.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet" />
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="StyleSheet.css" rel="Stylesheet" type="text/css" />
+
+
+
+    <asp:ContentPlaceHolder id="head" runat="server">
+   
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+
+
+    <header>
+    <form id="form1" runat="server">
+
+        <div id="header-inner">
+        
+            <a href="Default.aspx"> <asp:Image ID="logo" runat="server" ImageUrl="~/images/unnamed.png" alt="Khoa Nguyen's logo" Height="60" max-width="100%" /></a>
+            
+            <nav>
+                <a href="#" id="menu-icon"></a>
+
+                    <ul>
+                            <li class="active"><a href="Default.aspx" title="Home">Home</a></li>
+                            <li><a href="Resume.aspx" title="Resume">Resume</a></li>
+                            <li><a href="http://www.imkhoa.com" title="About">About Me</a></li> 
+                            <li><a href="Contact.aspx" title="Contact">Contact</a></li>
+                            <li><a href="Login.aspx" title="Login">Login</a></li>
+                            <li><a href="Signup.aspx" title="Signup">Signup</a></li>
+
+                    </ul>      
+            </nav>
+        </div>
+                           <div>
+                                <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+                                </asp:ContentPlaceHolder>
+                            </div>
+   
+         </form>
+        <br />
+        </header>
+
+    <div id="footer"><p>&copy; 2017 Khoa Nguyen</p> </div>
+
+
+</body>
+   
+</html>
